@@ -16,7 +16,7 @@ const getPossibleAnswers = (centralLetter, outerLetters) => {
             // Iterate through each of the letters in the word.
             let shouldAddWord = true;
             for (let i = 0; i < lowercaseWord.length; i++) {
-                // If one of the word's letters isn't in the letters list, don't add the word.
+                // If one of the word's letters isn't in the honeycomb, don't add the word.
                 const centralAndOuterLetters = outerLetters + centralLetter;
                 if (
                     !centralAndOuterLetters
