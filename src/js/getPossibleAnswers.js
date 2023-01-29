@@ -24,6 +24,7 @@ const getPossibleAnswers = (centralLetter, outerLetters) => {
                         .includes(lowercaseWord[i])
                 ) {
                     shouldAddWord = false;
+                    break;
                 }
             }
 
