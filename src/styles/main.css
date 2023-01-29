@@ -15,6 +15,14 @@ html {
     font-size: 1.25em;
 }
 
+img {
+    margin-top: 1em;
+}
+
+details {
+    margin-bottom: 1em;
+}
+
 button {
     padding: 1em;
 }
