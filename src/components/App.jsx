@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import getPossibleAnswers from '../js/getPossibleAnswers.js';
 import PossibleAnswersHeaderAndInfo from './PossibleAnswersHeaderAndInfo.jsx';
+import SpellingBeeSolverInfo from './SpellingBeeSolverInfo.jsx';
 
 function App() {
     const [inputs, setInputs] = useState('');
@@ -50,7 +51,7 @@ function App() {
                 <button type='submit'>Submit</button>
             </form>
             {possibleAnswers.length > 0 ? (
-                <PossibleAnswersHeaderAndInfo/>
+                <PossibleAnswersHeaderAndInfo />
             ) : (
                 <></>
             )}
@@ -59,6 +60,7 @@ function App() {
                     <li key={answer}>{answer}</li>
                 ))}
             </ul>
+            <SpellingBeeSolverInfo />
         </>
     );
 }
