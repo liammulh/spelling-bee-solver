@@ -36,10 +36,6 @@ else {
         // If the word meets the length requirement, and it includes the central letter...
         if ( word.length >= MIN_ANSWER_LENGTH && lowercaseWord.includes( centralLetter.toLowerCase() ) ) {
 
-            if ( word === 'act' ) {
-                console.log( `in contention: ${word}` );
-            }
-
             // Iterate through each of the letters in the word.
             let shouldAddWord = true;
             for ( let i = 0; i < lowercaseWord.length; i++ ) {
