@@ -2,6 +2,7 @@ import {useState} from 'react';
 import getPossibleAnswers from '../js/getPossibleAnswers.js';
 import PossibleAnswersHeaderAndInfo from './PossibleAnswersHeaderAndInfo.jsx';
 import SpellingBeeSolverFooter from './SpellingBeeSolverFooter.jsx';
+import SpellingBeeSolverInfo from './SpellingBeeSolverInfo.jsx';
 
 function App() {
     const [inputs, setInputs] = useState('');
@@ -27,6 +28,7 @@ function App() {
     return (
         <>
             <h1>🐝 Spelling Bee Solver 🐝</h1>
+            <SpellingBeeSolverInfo />
             <form onSubmit={handleSubmit}>
                 <div id='label-container'>
                     <label>
