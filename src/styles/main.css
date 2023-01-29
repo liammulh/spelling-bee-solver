@@ -1,7 +1,18 @@
+:root {
+    --primary-light: rgb(85, 170, 85);
+    --primary-dark: rgb(25, 25, 25);
+    --max-width: 70ch;
+}
+
 html {
-    background-color: #53ab53;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    max-width: var(--max-width);
+    padding: 3em 1em;
+    margin: auto;
+    line-height: 1.75;
     font-family: sans-serif;
-    margin: 1em;
+    font-size: 1.25em;
 }
 
 button {
