@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import getPossibleAnswers from '../js/getPossibleAnswers.js';
 import PossibleAnswersHeaderAndInfo from './PossibleAnswersHeaderAndInfo.jsx';
-import SpellingBeeSolverInfo from './SpellingBeeSolverInfo.jsx';
+import SpellingBeeSolverFooter from './SpellingBeeSolverFooter.jsx';
 
 function App() {
     const [inputs, setInputs] = useState('');
@@ -60,7 +60,7 @@ function App() {
                     <li key={answer}>{answer}</li>
                 ))}
             </ul>
-            <SpellingBeeSolverInfo />
+            <SpellingBeeSolverFooter />
         </>
     );
 }

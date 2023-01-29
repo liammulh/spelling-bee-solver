@@ -1,4 +1,4 @@
-const SpellingBeeSolverInfo = () => {
+const SpellingBeeSolverFooter = () => {
     return (
         <>
             <hr />
@@ -12,4 +12,4 @@ const SpellingBeeSolverInfo = () => {
     );
 };
 
-export default SpellingBeeSolverInfo;
+export default SpellingBeeSolverFooter;
