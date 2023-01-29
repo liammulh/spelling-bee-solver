@@ -8,9 +8,10 @@ function App() {
         <>
             <h2>Possible Answers</h2>
             <p>
-                The words below are <em>possible</em> answers. They all contain
-                the central letter and the outer letters, but they might not be
-                in Spelling Bee's list of accepted answers.
+                The words below are <em>possible</em> answers. They are all the
+                words in my list of words that contain the central letter and
+                the outer letters in the Spelling Bee word. They might not be in
+                Spelling Bee's list of accepted answers.
             </p>
         </>
     );
@@ -34,26 +35,28 @@ function App() {
     };
     return (
         <>
-            <h1>Spelling Bee Solver</h1>
+            <h1>🐝 Spelling Bee Solver 🐝</h1>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Central letter:
-                    <input
-                        type='text'
-                        name='centralLetter'
-                        value={inputs.centralLetter || ''}
-                        onChange={handleChange}
-                    />
-                </label>
-                <label>
-                    Outer letters:
-                    <input
-                        type='text'
-                        name='outerLetters'
-                        value={inputs.outerLetters || ''}
-                        onChange={handleChange}
-                    />
-                </label>
+                <div id='label-container'>
+                    <label>
+                        Central letter:&nbsp;
+                        <input
+                            type='text'
+                            name='centralLetter'
+                            value={inputs.centralLetter || ''}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        Outer letters:&nbsp;
+                        <input
+                            type='text'
+                            name='outerLetters'
+                            value={inputs.outerLetters || ''}
+                            onChange={handleChange}
+                        />
+                    </label>
+                </div>
                 <button type='submit'>Submit</button>
             </form>
             {possibleAnswers.length > 0 ? (

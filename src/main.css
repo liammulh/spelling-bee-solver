@@ -1,0 +1,15 @@
+html {
+    font-family: sans-serif;
+    margin: 1em;
+}
+
+button {
+    padding: 1em;
+}
+
+#label-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
