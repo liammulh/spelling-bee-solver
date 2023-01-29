@@ -1,20 +1,10 @@
 import {useState} from 'react';
-import getPossibleAnswers from './js/getPossibleAnswers.js';
+import getPossibleAnswers from '../js/getPossibleAnswers.js';
+import PossibleAnswersHeaderAndInfo from './PossibleAnswersHeaderAndInfo.jsx';
 
 function App() {
     const [inputs, setInputs] = useState('');
     const [possibleAnswers, setPossibleAnswers] = useState([]);
-    const possibleAnswersHeaderAndInfoJsx = (
-        <>
-            <h2>Possible Answers</h2>
-            <p>
-                The words below are <em>possible</em> answers. They are all the
-                words in my list of words that contain the central letter and
-                the outer letters in the Spelling Bee word. They might not be in
-                Spelling Bee's list of accepted answers.
-            </p>
-        </>
-    );
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
@@ -60,7 +50,7 @@ function App() {
                 <button type='submit'>Submit</button>
             </form>
             {possibleAnswers.length > 0 ? (
-                possibleAnswersHeaderAndInfoJsx
+                <PossibleAnswersHeaderAndInfo/>
             ) : (
                 <></>
             )}

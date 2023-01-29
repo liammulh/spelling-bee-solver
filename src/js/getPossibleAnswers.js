@@ -1,4 +1,4 @@
-import words from '../../words.js';
+import words from './words.js';
 
 const MIN_ANSWER_LENGTH = 3;
 
