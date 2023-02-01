@@ -1,4 +1,4 @@
-const PossibleAnswersHeaderAndInfo = () => {
+const PossibleAnswersInfo = () => {
     return (
         <>
             <h2>Possible Answers</h2>
@@ -12,4 +12,4 @@ const PossibleAnswersHeaderAndInfo = () => {
     );
 };
 
-export default PossibleAnswersHeaderAndInfo;
+export default PossibleAnswersInfo;
