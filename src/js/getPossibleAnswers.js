@@ -1,6 +1,6 @@
 import words from './words.js';
 
-const MIN_ANSWER_LENGTH = 3;
+const MIN_ANSWER_LENGTH = 4;
 
 const getPossibleAnswers = (centralLetter, outerLetters) => {
     const possibleAnswers = [];
